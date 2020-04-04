@@ -8,8 +8,8 @@ folium
 matplotlib
 scikit-learn
 statsmodels
-toml
 flake8
 black
 geopandas
 beautifulsoup4
+tqdm

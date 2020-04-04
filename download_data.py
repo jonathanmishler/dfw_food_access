@@ -2,15 +2,13 @@ import os
 from typing import Optional
 import wget
 from zipfile import ZipFile
-import toml
 
 
 def create_data_dir() -> None:
     """ Create the directory to hold all the data and the directory
     is defined inthe config.toml file
     """
-    config = toml.load("config.toml")
-    data_dir = config["data_directory"]
+    data_dir = "data"
     if not os.path.isdir(data_dir):
         os.mkdir(data_dir)
     return data_dir
